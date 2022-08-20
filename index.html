@@ -12,19 +12,27 @@
 <body>
     <!-- Header with Navbar -->
     <header>
-        <nav>
-            <div class="container-header">
-                <div class="judul">
-                    <h2 onclick="clickAnthrofax()">ANTHROFAX</h2>
-                </div>
-                <div class="nav">
-                    <ul type="none">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#my-skills">My Skills</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+        <nav class="navbar">
+            <a href="#" class="nav-branding">ANTHROFAX.</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#my-skills" class="nav-link">My Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
     </header>
@@ -33,23 +41,21 @@
     <main>
         <aside class="home" id="home">
 
-            <div class="bagianSatu">
+            <div class="text-gambar">
                 <div class="text-home">
                     <span class="barisSatu"><p>Hello, I'm</p></span>
-
                     <h1>Afridho Ikhsan</h1>
                     <span class="barisDua"><p>Junior Web Developer</p></span>
                     <div class="barisTiga">
                         <p>Interested in web development </p>
                         <p>and always try the best in every project.</p>
-
-                        <div class="button-about" onclick="clickViewMore()">View More</div>
                     </div>
-
+                    <div class="button-about" onclick="clickViewMore()">View More</div>
                 </div>
 
-                <img src="IMG/AFRIDHO IKHSAN.jpg" alt="" width="550px" height="550px">
-                <div class="clear-float"></div>
+                <img src="IMG/AFRIDHO IKHSAN.jpg" alt="">
+            </div>
+
             </div>
 
 
@@ -72,10 +78,9 @@
                 <br />
                 <div class="halo-gue-edo">
                     <p>
-                        Besides my fullname, i usually called Edo, my age is 18 years old, and I am a 1st semester informatics engineering student at Universitas Singaperbangsa Karawang. I am very interested in making an application, especially website-based. I hope, I can get
-                        good grades in this submission :)
-                        <br> <br> Btw, the abilities that I wrote below are just fakes hehe, I just want the website to be more filled up. Although the writing of the code is still messy and inefficient, I hope i can get good grades in this submission,
-                        Thank you <span class="dicoding">Dicoding</span> <object data="IMG/heart-for-dicoding.svg" width="20px" height="20px"></object> for this oppotunity:)
+                        Besides my fullname, i usually called Edo, my age is 18 years old, and I am a 1st semester informatics engineering student at Universitas Singaperbangsa Karawang. I am very interested in making an application, especially website-based.
+                        <br> <br> Btw, the abilities that I wrote below are just fakes hehe, I just want the website to be more filled up. Although the writing of the code is still messy and inefficient, I hope i can get good grades in this submission.
+                        <br> Thank you <span class="dicoding">Dicoding</span> <object data="IMG/heart-for-dicoding.svg" width="20px" height="20px"></object> for this oppotunity:)
                     </p>
                 </div>
 
@@ -97,52 +102,77 @@
             </div>
 
             <div class="icon-skill">
-                <object data="IMG/html.svg" width="65px" height="65px"></object>
-                <object data="IMG/css.svg" width="65px" height="65px"></object>
-                <object data="IMG/js.svg" width="65px" height="65px"></object>
-                <object data="IMG/bootstrap.svg" width="65px" height="65px"></object>
-                <object data="IMG/tailwind.svg" width="65px" height="65px"></object>
-                <object data="IMG/github.svg" width="65px" height="65px"></object>
-                <object data="IMG/gulp.svg" width="65px" height="65px"></object>
-                <object data="IMG/nodejs.svg" width="65px" height="65px"></object>
-                <object data="IMG/reactjs.svg" width="65px" height="65px"></object>
+                <div class="skill-1">
+                    <object data="IMG/html.svg" width="65px" height="65px"></object>
+                    <p>HTML</p>
+                </div>
+                <div class="skill-1">
+                    <object data="IMG/css.svg" width="65px" height="65px"></object>
+                    <p>CSS</p>
+                </div>
+                <div class="skill-1">
+                    <object data="IMG/js.svg" width="65px" height="65px"></object>
+                    <P>Javascript</P>
+                </div>
+                <div class="skill-1">
+                    <object data="IMG/bootstrap.svg" width="65px" height="65px"></object> BOOTSTRAP
+                </div>
+                <div class="skill-1">
+                    <object data="IMG/tailwind.svg" width="65px" height="65px"></object>
+                    <p>TAILWIND</p>
+                </div>
+                <div class="skill-1">
+                    <object data="IMG/github.svg" width="65px" height="65px"></object>
+                    <p>GITHUB</p>
+                </div>
+                <div class="skill-1">
+                    <object data="IMG/gulp.svg" width="65px" height="65px"></object>
+                    <p>GULP</p>
+                </div>
+                <div class="skill-1">
+                    <object data="IMG/nodejs.svg" width="65px" height="65px"></object>
+                    <p>NODE.JS</p>
+                </div>
+                <div class="skill-1">
+                    <object data="IMG/reactjs.svg" width="65px" height="65px"></object>
+                    <p>REACT JS</p>
+                </div>
             </div>
 
-            <div class="rincian-skill-satu">
+            <div class="rincian-skill">
                 <div class="skill">
-                    <img src="PROJECTS/1.jpg" alt="" />
+                    <img src="PROJECTS/1.jpg" alt="Harus nya sih tampil gambar :)" />
                     <div class="kotakP">
                         <p>Able to make user interface browser layout with pure only HTML, CSS, Javascript. With paying attention on browser responsiveness & HTML accessibility too</p>
                     </div>
                 </div>
                 <div class="skill">
-                    <img src="PROJECTS/2.jpg" alt="" />
+                    <img src="PROJECTS/2.jpg" alt="Harus nya sih tampil gambar :)" />
                     <div class="kotakP">
                         <p>Have ability to work on Javascript with paying attention on Asynchronus Callbacks uses, so users will be comfortable when using my projects</p>
                     </div>
                 </div>
                 <div class="skill">
-                    <img src="PROJECTS/3.jpg" alt="" />
+                    <img src="PROJECTS/3.jpg" alt="Harus nya sih tampil gambar :)" />
                     <div class="kotakP">
                         <p>Have ability to comminicate technical project with you (client) in a simple & easy way to understand.</p>
                     </div>
                 </div>
-            </div>
 
-            <div class="rincian-skill-dua">
                 <div class="skill">
-                    <img src="PROJECTS/4.jpg" alt="" />
+                    <img src="PROJECTS/4.jpg" alt="Harus nya sih tampil gambar :)" />
                     <div class="kotakP">
                         <p>Know about HTML Semantic Elements, like Form Validation, SVG & Canvas. And able to make HTML Syntax with structurable, resusable, easy to organize by other people.</p>
                     </div>
                 </div>
                 <div class="skill">
-                    <img src="PROJECTS/5.jpg" alt="" />
+                    <img src="PROJECTS/5.jpg" alt="Harus nya sih tampil gambar :)" />
                     <div class="kotakP">
                         <p>Have skills on ReactJS & able to use frameworks that related to it. Which is Gatsby Technology.</p>
                     </div>
                 </div>
             </div>
+
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
@@ -156,7 +186,7 @@
 
         <!-- Conctact -->
         <article class="contact" id="contact">
-            <form action="">
+            <form name="anthrofax-contact-form">
                 <div class="contact-me">
                     <h1>Contact Me</h1>
                 </div>
@@ -164,21 +194,18 @@
                 <div class="kolom-isian">
                     <div class="nama-lengkap">
                         <label for="nama">Full Name</label>
-                        <input type="text" id="nama">
+                        <input type="text" id="nama" name="nama">
                     </div>
 
                     <div class="email">
                         <label for="email">Email</label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" name="email">
                     </div>
 
                     <div class="pesan">
                         <label for="pesan">Input your massage here!</label>
-                        <textarea name="" id="pesan" cols="80" rows="8"></textarea>
-                    </div>
-
-                    <div class="tombol">
-                        <a href="">Submit</a>
+                        <textarea name="pesan" id="pesan" rows="8"></textarea>
+                        <button type="submit">Send</button>
                     </div>
             </form>
 
@@ -202,6 +229,20 @@
     <!-- Akhir Footer -->
 
     <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzqeyKM1evIm-iWCX4uN7Q01Pd855KG_NBtE1exc3abu36pxaiDeAPv4zZvGRLlmt4h/exec'
+        const form = document.forms['anthrofax-contact-form']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
 
 </html>
