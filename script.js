@@ -24,3 +24,14 @@ document.querySelectorAll(".nav-link").forEach((n) => {
         navMenu.classList.remove("active");
     });
 });
+
+// Shadow pada judul 'ANTHROFAX berganti"
+const anthrofax = document.querySelector("a.nav-branding");
+const myImage = document.querySelector(".home img");
+
+setInterval(function() {
+    const r = Math.round(Math.random() * 256);
+    const g = Math.round(Math.random() * 256);
+    const b = Math.round(Math.random() * 256);
+    anthrofax.style.textShadow = `0 0 10px rgb(${r}, ${g}, ${b}), 0 0 20px rgb(${r}, ${g}, ${b}),0 0 30px rgb(${r}, ${g}, ${b})`;
+}, 1000);
